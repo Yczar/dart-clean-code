@@ -50,10 +50,10 @@ In this section, we delve into some critical guidelines to follow when naming en
 2. **Avoid Disinformation:** Stay clear of names that can be misleading or are ambiguous in the context of your code.
   ```dart
   // Bad
-  int lst; // Not clear what 'lst' stands for
+  int? lst; // Not clear what 'lst' stands for
 
   // Good
-  int listTotal;
+  int? listTotal;
   ```
 3. **Make Meaningful Distinctions:** Don't resort to number series (a1, a2, ...) or noise words (theProduct, myProduct, ...) for distinctions. Every name should have a purposeful and unique distinction.
   ```dart
