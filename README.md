@@ -851,7 +851,8 @@ final class Admin extends User {
 }
 ```
 Class modifiers are invaluable tools for managing class behaviors and safeguarding the integrity of your codebase. A sound understanding and correct application of these modifiers is a key aspect of writing clean, maintainable code.
-`For a comprehensive study of these class modifiers, please refer to the Dart documentation [here](https://dart.dev/language/class-modifiers).`
+
+For a comprehensive study of these class modifiers, please refer to the Dart documentation [here](https://dart.dev/language/class-modifiers).
 
 ## Conclusion
 
