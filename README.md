@@ -43,10 +43,10 @@ In this section, we delve into some critical guidelines to follow when naming en
    
    ```dart
    // Bad
-   int d;  // elapsed time in days
+   int? d;  // elapsed time in days
 
    // Good
-   int elapsedTimeInDays;
+   int? elapsedTimeInDays;
 2. **Avoid Disinformation:** Stay clear of names that can be misleading or are ambiguous in the context of your code.
   ```dart
   // Bad
@@ -68,10 +68,10 @@ In this section, we delve into some critical guidelines to follow when naming en
 4. **Use Pronounceable and Searchable Names:** If you can't pronounce it, you probably can't remember it. And if you can't search for it, you're in for a frustrating time.
   ```dart
   // Bad
-  DateTime genymdhms;
+  DateTime? genymdhms;
 
   // Good
-  DateTime generationTimestamp;
+  DateTime? generationTimestamp;
   ```
 
 These structures should give a clear understanding of the importance of meaningful names in code. The examples should illustrate the points made, showing how these principles can be applied in real Dart code.
