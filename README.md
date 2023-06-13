@@ -350,4 +350,61 @@ Understanding and respecting system boundaries is fundamental to designing robus
 
 By understanding and properly managing system boundaries, you can create code that's easier to test, maintain, and understand.
 
+## Demystifying Unit Tests
+
+Unit tests are a vital part of developing robust and maintainable software. They help verify your code's correctness, make refactoring safer, and can even guide your design if you follow a test-driven development (TDD) approach. In Dart, we have a robust `test` package that facilitates writing unit tests.
+
+1. **Writing Simple Unit Test:** A simple test in Dart can be written using the `test` function. Assertions are made using the `expect` function.
+
+    ```dart
+    import 'package:test/test.dart';
+
+    void main() {
+        test('String.split() splits the string on the delimiter', () {
+            var string = 'foo,bar,baz';
+            expect(string.split(','), equals(['foo', 'bar', 'baz']));
+        });
+    }
+    ```
+
+2. **Grouping Tests:** Tests can be grouped together using the `group` function. This makes tests easier to manage and read.
+
+    ```dart
+    import 'package:test/test.dart';
+
+    void main() {
+        group('String.split()', () {
+            test('splits the string on the delimiter', () {
+                var string = 'foo,bar,baz';
+                expect(string.split(','), equals(['foo', 'bar', 'baz']));
+            });
+
+            test('returns the string if no delimiter is present', () {
+                var string = 'foobar';
+                expect(string.split(','), equals(['foobar']));
+            });
+        });
+    }
+    ```
+
+3. **Mocking and Stubbing:** For more complex unit tests, you might need to stub or mock certain behaviors. The `mockito` package is a popular choice for this in Dart.
+
+    ```dart
+    import 'package:mockito/mockito.dart';
+    import 'package:test/test.dart';
+
+    class MockFoo extends Mock implements Foo {}
+
+    void main() {
+        test('Mocking example', () {
+            var mockFoo = MockFoo();
+            when(mockFoo.someMethod('valid input')).thenReturn('expected output');
+            expect(mockFoo.someMethod('valid input'), equals('expected output'));
+        });
+    }
+    ```
+
+Remember, unit tests are your friends. They can save you from future headaches by catching bugs early in the development process. They can also serve as a form of documentation, showcasing how your code is supposed to work.
+
+
 
