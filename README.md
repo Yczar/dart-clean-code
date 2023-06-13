@@ -666,3 +666,70 @@ Successive Refinement is the practice of continuously refining and improving you
 
 Remember, the goal of successive refinement isn't to write perfect code from the get-go. Instead, it's about recognizing that your understanding and the quality of your code will improve over time.
 
+## Detecting Code Smells and Heuristics
+
+Code smells are indicators in the code that suggest a problem that needs attention. These are not bugs, but rather symptoms of poor design or implementation choices. Heuristics, on the other hand, are experienced-based techniques for problem-solving, learning, and discovery.
+
+Here are a few examples:
+
+1. **Duplicate Code:** If the same code structure is found in more than one place, it might be a good idea to encapsulate it in a single function or class.
+
+    ```dart
+    // Duplicate Code
+    void printStudentDetails(Student s) {
+        print('Name: ${s.name}');
+        print('Age: ${s.age}');
+        print('Grade: ${s.grade}');
+    }
+
+    void printTeacherDetails(Teacher t) {
+        print('Name: ${t.name}');
+        print('Age: ${t.age}');
+        print('Subject: ${t.subject}');
+    }
+
+    // Refactored Code
+    void printPersonDetails(Person p, String additionalInfo) {
+        print('Name: ${p.name}');
+        print('Age: ${p.age}');
+        print(additionalInfo);
+    }
+    ```
+
+2. **Long Function or Class:** A function or class that has grown too large is hard to understand and maintain. Consider breaking it down into smaller, more manageable pieces.
+
+    ```dart
+    // Long Function
+    void doEverything() {
+        // hundreds of lines of code...
+    }
+
+    // Refactored Code
+    void doPart1() { /* ... */ }
+    void doPart2() { /* ... */ }
+    void doPart3() { /* ... */ }
+
+    void doEverything() {
+        doPart1();
+        doPart2();
+        doPart3();
+    }
+    ```
+
+3. **Comments explaining complex code:** If you need a comment to explain what a bit of code does, it might be a sign that the code is too complex. Consider refactoring it to make its purpose clearer.
+
+    ```dart
+    // Complex Code
+    void calculate() {
+        // Complex calculations...
+    }
+
+    // Refactored Code
+    void calculate() {
+        prepareData();
+        performCalculations();
+        storeResults();
+    }
+    ```
+
+Detecting these code smells and others can help you keep your code clean and maintainable. Remember, these are heuristics, not hard and fast rules. Use your judgment and experience to determine when and how to apply them.
