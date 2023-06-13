@@ -865,3 +865,8 @@ This is just a stepping stone in your path to becoming a better Dart developer. 
 Your code is a reflection of your understanding and your thought process. Make it count. It's not just about making your code work, it's about crafting a piece of art that stands the test of time. Happy coding!
 
 Remember, there's no endpoint to learning in this field. So, stay curious, keep exploring, and most importantly, enjoy the process!  
+
+# Contributing
+
+We appreciate all contributions to our project! If you're interested in contributing, please refer to our `CONTRIBUTING.md` file. It provides a detailed guide on how to get started with contributing to our codebase. We look forward to your suggestions, bug reports, and pull requests.
+
