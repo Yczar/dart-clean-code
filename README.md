@@ -27,6 +27,7 @@ Get ready to embark on an enlightening journey, refining your Dart coding practi
 12. [Mastering Successive Refinement](#mastering-successive-refinement)
 13. [Detecting Code Smells and Heuristics](#detecting-code-smells-and-heuristics)
 14. [State Management in Dart](#state-management-in-dart)
+15. [Miscellaneous](#miscellaneous)
 
 Let's dive in and start the journey towards mastering clean code in Dart!
 
@@ -803,10 +804,60 @@ Here's a quick overview of some common state management techniques in Dart:
     ```
 
 Remember, choosing a state management strategy depends on your project's complexity, size, and your team's familiarity with the pattern. Strive for consistency, predictability, and understandability when making your choice.
+## Miscellaneous
+
+In this section, we tackle a variety of additional topics that don't neatly fit into our previous categories, yet remain crucial in the pursuit of clean code. This includes areas such as security considerations, optimization techniques, and maintaining code agility as projects scale.
+
+First up, let's delve into Class Modifiers within the scope of Clean Code principles:
+
+```markdown
+### Exploring Class Modifiers in Clean Code
+
+In Dart, class modifiers control the usage of a class or mixin within its own library and beyond. The set of modifiers include:
+
+- abstract
+- base
+- final
+- interface
+- sealed
+- mixin
+
+They precede a class or mixin declaration and influence the expected behaviours of the class. 
+
+Consider the following examples illustrating their usage:
+
+```dart
+// 'abstract' modifier
+abstract class AbstractEntity {
+  void save();
+}
+
+// 'base' modifier
+base class User extends AbstractEntity {
+  String name;
+  
+  @override
+  void save() {
+    // Implementation for saving a user
+  }
+}
+
+// 'final' modifier
+final class Admin extends User {
+  @override
+  void save() {
+    // Implementation for saving an admin
+  }
+}
+```
+Class modifiers are invaluable tools for managing class behaviors and safeguarding the integrity of your codebase. A sound understanding and correct application of these modifiers is a key aspect of writing clean, maintainable code.
+`For a comprehensive study of these class modifiers, please refer to the Dart documentation [here](https://dart.dev/language/class-modifiers).`
 
 ## Conclusion
 
 Mastering the art of clean, efficient, and maintainable code is an ongoing journey. We've covered a range of topics in this repository from creating meaningful names and crafting efficient functions, to understanding system boundaries and mastering successive refinement, and even touched upon important topics like state management in Dart. 
+
+We've also explored the fascinating world of class modifiers in Dart, shedding light on `abstract`, `base`, `final`, `interface`, `sealed`, and `mixin`.
 
 This is just a stepping stone in your path to becoming a better Dart developer. As you continue to grow and learn, remember to keep refining and polishing your skills. Programming is a craft, and like any craftsperson, you should take pride in your work.
 
