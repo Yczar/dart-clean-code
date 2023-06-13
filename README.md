@@ -810,7 +810,7 @@ In this section, we tackle a variety of additional topics that don't neatly fit 
 
 First up, let's delve into Class Modifiers within the scope of Clean Code principles:
 
-```markdown
+
 ### Exploring Class Modifiers in Clean Code
 
 In Dart, class modifiers control the usage of a class or mixin within its own library and beyond. The set of modifiers include:
