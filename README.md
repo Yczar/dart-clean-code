@@ -10,3 +10,22 @@ Herein, you'll find Dart implementations of key concepts, principles, and patter
 
 Get ready to embark on an enlightening journey, refining your Dart coding practices, and contributing to cleaner, more efficient codebases. Let's dive in and start the journey towards mastering clean code in Dart!
 
+
+## Table of Contents
+
+1. [Crafting Meaningful Names](#crafting-meaningful-names)
+2. [Creating Efficient Functions](#creating-efficient-functions)
+3. [Perfecting Code Formatting](#perfecting-code-formatting)
+4. [Harnessing Objects and Data Structures](#harnessing-objects-and-data-structures)
+5. [Error Handling Mastery](#error-handling-mastery)
+6. [Understanding System Boundaries](#understanding-system-boundaries)
+7. [Demystifying Unit Tests](#demystifying-unit-tests)
+8. [Designing Effective Classes](#designing-effective-classes)
+9. [Building Robust Systems](#building-robust-systems)
+10. [Unveiling the Power of Emergence](#unveiling-the-power-of-emergence)
+11. [Concurrency in Action](#concurrency-in-action)
+12. [Mastering Successive Refinement](#mastering-successive-refinement)
+13. [Detecting Code Smells and Heuristics](#detecting-code-smells-and-heuristics)
+14. [State Management in Dart](#state-management-in-dart)
+
+Let's dive in and start the journey towards mastering clean code in Dart!
