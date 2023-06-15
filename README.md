@@ -773,8 +773,8 @@ Here's a quick overview of some common state management techniques in Dart:
 
     class Counter extends ConsumerWidget {
       @override
-      Widget build(BuildContext context, ScopedReader watch) {
-        final count = watch(counterProvider).state;
+      Widget build(BuildContext context, WidgetRef ref) {
+        final count = ref.watch(counterProvider);
         return Text('$count');
       }
     }
